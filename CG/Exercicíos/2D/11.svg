@@ -1,0 +1,12 @@
+<svg width="260" height="64" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" fill="red" stroke="green" stroke-width="8" transform="translate(64,32)scale(0.25)" d="
+  M -200 0
+  Q 0 -200 200 0
+  Q 0 200 -200 0
+  M -100 50
+  L -100 -50
+  L 100 50
+  L 100 -50
+  L -100 50
+"/>
+</svg>

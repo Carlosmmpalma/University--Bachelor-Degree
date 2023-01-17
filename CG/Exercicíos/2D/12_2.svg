@@ -1,0 +1,21 @@
+<svg width="640px" height="120px">
+    <defs>
+        <linearGradient id="grad1" gradientTransform="rotate(90)">
+            <stop
+                offset="0"
+                stop-color="khaki" />
+            <stop
+                offset="0.5"
+                stop-color="steelblue" />
+                <stop
+                offset="1"
+                stop-color="red" />
+        </linearGradient>
+    </defs>
+    <rect
+        rx="4"
+        x="0" y="0"
+        width="640" height="120"
+
+        fill="url(#grad1)" />
+</svg>

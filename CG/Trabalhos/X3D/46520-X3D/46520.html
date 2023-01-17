@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>46520-X3D</title>
+    <!--Bibliotecas-->
+    <script type='application/javascript' src='lib/x3dom/x3dom-full.js'></script>
+    <link rel='stylesheet' type='text/css' href='lib/x3dom/x3dom.css' />
+</head>
+
+<body>
+    <h1>Trabalho de 46520 - X3D</h1>
+    <x3d width="900px" height="600Px">
+        <scene>
+            <!--
+
+                    Luz
+
+                -->
+            <PointLight radius="500" intensity="1" location="100 -50 100" color="1 1 0.7" shadowIntensity="0.1"></PointLight>
+
+            <!--
+
+                    ViewPoint
+
+                -->
+            <ViewPoint position="0 3 18" orientation="0 0 0 1"></ViewPoint>
+
+
+            <!--
+                Cabeça
+            -->
+            <Transform DEF="Cabeça">
+                <Transform translation="0,7,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#c68642">
+                            </material>
+                        </appearance>
+                        <Sphere ccw='true' lit='true' metadata='X3DMetadataObject' radius='1' solid='true' subdivision='24,24' useGeoCache='true'></Sphere>
+                    </shape>
+
+                    <!--Nariz-->
+                    <Transform translation="0,-0.3,1">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="#c68642">
+                                </material>
+                            </appearance>
+                            <Sphere ccw='true' lit='true' metadata='X3DMetadataObject' radius='0.12' solid='true' subdivision='24,24' useGeoCache='true'></Sphere>
+                        </shape>
+                    </Transform>
+                    <!--Olhos-->
+                    <Transform translation="0.35,0.3,0.9">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="#954535">
+                                </material>
+                            </appearance>
+                            <Sphere ccw='true' lit='true' metadata='X3DMetadataObject' radius='0.15' solid='true' subdivision='24,24' useGeoCache='true'></Sphere>
+                        </shape>
+                    </Transform>
+                    <Transform translation="-0.35,0.3,0.9">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="#954535">
+                                </material>
+                            </appearance>
+                            <Sphere ccw='true' lit='true' metadata='X3DMetadataObject' radius='0.15' solid='true' subdivision='24,24' useGeoCache='true'></Sphere>
+                        </shape>
+                    </Transform>
+                </Transform>
+                <!--Boca -->
+                <Transform scale="0.8 0.8 0.8" translation="0,6.3,0.45">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#ff878d">
+                            </material>
+                        </appearance>
+                        <Cylinder radius="0.4" height="0.10" />
+                    </shape>
+                </Transform>
+            </Transform>
+            <!--
+                Tronco
+            -->
+            <Transform DEF="Tronco">
+                <Transform translation="0,5.25,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#1F51FF">
+                            </material>
+                        </appearance>
+                        <Box size="1.3 1.6 0.8" />
+                    </shape>
+                </Transform>
+                <!--Cinto-->
+                <Transform scale="1 1 1" translation="0,4.25,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#FF0000">
+                            </material>
+                        </appearance>
+                        <Box size="1.3 0.4 0.8" />
+                    </shape>
+                </Transform>
+                <Transform translation="0,4.25,0.30">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#ffff00">
+                            </material>
+                        </appearance>
+                        <Sphere ccw='true' lit='true' metadata='X3DMetadataObject' radius='0.22' solid='true' subdivision='24,24' useGeoCache='true'></Sphere>
+                    </shape>
+                </Transform>
+                <!--Pernas-->
+                <Transform translation="-0.4,3.45,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#1F51FF">
+                            </material>
+                        </appearance>
+                        <Box size="0.5 1.2 0.8" />
+                    </shape>
+                </Transform>
+                <Transform translation="0.4,3.45,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#1F51FF">
+                            </material>
+                        </appearance>
+                        <Box size="0.5 1.2 0.8" />
+                    </shape>
+                </Transform>
+                <!--Pés-->
+                <Transform translation="-0.4,2.65,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#FF0000">
+                            </material>
+                        </appearance>
+                        <Box size="0.5 0.4 0.8" />
+                    </shape>
+                </Transform>
+                <Transform translation="0.4,2.65,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#FF0000">
+                            </material>
+                        </appearance>
+                        <Box size="0.5 0.4 0.8" />
+                    </shape>
+                </Transform>
+            </Transform>
+            <!--Braços-->
+            <Transform DEF="Braço_esquerdo">
+                <Transform translation="-1.3,5.6,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#1F51FF">
+                            </material>
+                        </appearance>
+                        <Box size="1.3, 0.4 0.8" />
+                    </shape>
+                </Transform>
+                <Transform translation="-2.2,5.6,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#FF0000">
+                            </material>
+                        </appearance>
+                        <Box size="0.5, 0.4 0.8" />
+                    </shape>
+                </Transform>
+            </Transform>
+            <Transform DEF="Braço_direito">
+                <Transform translation="1.3,5.6,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#1F51FF">
+                            </material>
+                        </appearance>
+                        <Box size="1.3, 0.4 0.8" />
+                    </shape>
+                </Transform>
+                <Transform translation="2.2,5.6,0">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="#FF0000">
+                            </material>
+                        </appearance>
+                        <Box size="0.5, 0.4 0.8" />
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!--
+
+                    Background
+
+                -->
+            <Background DEF='Oceano' skyAngle='0.8,1.3,1.4,1.5708' skyColor='0.21 0.31 0.59,0.33 0.45 0.7,0.57 0.66 0.85,0.6 0.73 0.89,0.7 0.83 0.98' groundAngle='0,1,1,1.5708' groundColor='0.8 0.3 0.8,0.1 0.2 0.3,0.3 0.4 0.5,0.3 0.4 0.6,0.3 0.5 1' />
+
+            <!-- Animação: Cabeça -->
+            <timeSensor DEF="time" cycleInterval="2" loop="true"> </timeSensor>
+            <PositionInterpolator DEF="move" key="0 0.5 0.6 0.7 0.8 0.9 1" keyValue="0 10 0  0 3 0  0 0 0  0 0 0  0 0 0  0 0 0  0 0 0"> </PositionInterpolator>
+            <Route fromNode="time" fromField="fraction_changed" toNode="move" toField="set_fraction"> </Route>
+            <Route fromNode="move" fromField="value_changed" toNode="Cabeça" toField="translation"> </Route>
+
+            <!--Animação: Tronco-->
+            <timeSensor DEF="time" cycleInterval="2" loop="true"> </timeSensor>
+            <PositionInterpolator DEF="move" key="0 0.5 0.6 0.7 0.8 0.9 1" keyValue="0 -10 0  0 -3 0  0 0 0  0 0 0  0 0 0  0 0 0  0 0 0"> </PositionInterpolator>
+            <Route fromNode="time" fromField="fraction_changed" toNode="move" toField="set_fraction"> </Route>
+            <Route fromNode="move" fromField="value_changed" toNode="Tronco" toField="translation"> </Route>
+
+            <!--Animação: Braço esquerdo-->
+            <timeSensor DEF="time" cycleInterval="2" loop="true"> </timeSensor>
+            <PositionInterpolator DEF="move" key="0 0.5 0.6 0.7 0.8 0.9 1" keyValue="-10 10 0  -4 4 0  0 0 0  0 0 0  0 0 0  0 0 0  0 0 0"> </PositionInterpolator>
+            <Route fromNode="time" fromField="fraction_changed" toNode="move" toField="set_fraction"> </Route>
+            <Route fromNode="move" fromField="value_changed" toNode="Braço_esquerdo" toField="translation"> </Route>
+
+            <!--Animação: Braço direito-->
+            <timeSensor DEF="time" cycleInterval="2" loop="true"> </timeSensor>
+            <PositionInterpolator DEF="move" key="0 0.5 0.6 0.7 0.8 0.9 1" keyValue="10 -10 0  4 -4 0  0 0 0  0 0 0  0 0 0  0 0 0  0 0 0"> </PositionInterpolator>
+            <Route fromNode="time" fromField="fraction_changed" toNode="move" toField="set_fraction"> </Route>
+            <Route fromNode="move" fromField="value_changed" toNode="Braço_direito" toField="translation"> </Route>
+
+        </scene>
+    </x3d>
+</body>
+
+</html>

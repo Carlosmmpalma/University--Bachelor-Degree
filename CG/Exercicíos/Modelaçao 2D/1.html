@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script>
+        function main() {
+            let gc = document
+                .getElementById("acanvas")
+                .getContext("2d");
+            gc.fillStyle = "yellow";
+            gc.fillRect(0, 0, 256, 256);
+
+            gc.beginPath();
+            gc.moveTo(0, 0);
+            gc.arcTo(64, 0, 64, 64, 16);
+
+            gc.strokeStyle = "pink";
+            gc.stroke();
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="acanvas">
+        <script>main();</script>
+    </canvas>
+</body>
+
+</html>

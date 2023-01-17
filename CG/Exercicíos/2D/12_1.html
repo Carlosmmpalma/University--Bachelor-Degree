@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script>
+        function main() {
+            let gc = document
+                .getElementById("acanvas")
+                .getContext("2d");
+            let g = gc.createLinearGradient(0, 0, 260, 0);
+            g.addColorStop(0.0, "steelblue");
+            g.addColorStop(0.5, "khaki");
+            g.addColorStop(1.0, "red");
+            gc.fillStyle = g;
+            gc.fillRect(0, 0, 520, 100);
+            gc.fill("evenodd");
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="acanvas">
+        <script>main();</script>
+    </canvas>
+</body>
+
+</html>

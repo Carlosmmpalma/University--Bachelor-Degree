@@ -1,0 +1,64 @@
+<x3d>
+  <scene>
+    <transform id="EixoX" rotation="0 0 1 -1.57">
+      <shape>
+        <appearance>
+          <twosidedmaterial diffuseColor="crimson">
+          </twosidedmaterial>
+        </appearance>
+        <cylinder height="2" radius="0.01">
+        </cylinder>
+      </shape>
+      <transform translation="0 1 0">
+        <shape>
+          <appearance>
+            <twosidedmaterial diffuseColor="crimson">
+            </twosidedmaterial>
+          </appearance>
+          <cone bottomradius="0.05" height="0.2">
+          </cone>
+        </shape>
+      </transform>
+    </transform>
+    <transform id="EixoY" translation="0 0 0">
+      <shape>
+        <appearance>
+          <twosidedmaterial diffuseColor="seagreen">
+          </twosidedmaterial>
+        </appearance>
+        <cylinder height="2" radius="0.01">
+        </cylinder>
+      </shape>
+      <transform translation="0 1 0">
+        <shape>
+          <appearance>
+            <twosidedmaterial diffuseColor="seagreen">
+            </twosidedmaterial>
+          </appearance>
+          <cone bottomradius="0.05" height="0.2">
+          </cone>
+        </shape>
+      </transform>
+    </transform>
+    <transform id="EixoZ" rotation="1 0 0 1.57">
+      <shape>
+        <appearance>
+          <twosidedmaterial diffuseColor="steelblue">
+          </twosidedmaterial>
+        </appearance>
+        <cylinder height="2" radius="0.01">
+        </cylinder>
+      </shape>
+      <transform translation="0 1 0">
+        <shape>
+          <appearance>
+            <twosidedmaterial diffuseColor="steelblue">
+            </twosidedmaterial>
+          </appearance>
+          <cone bottomradius="0.05" height="0.2">
+          </cone>
+        </shape>
+      </transform>
+    </transform>
+  </scene>
+</x3d>

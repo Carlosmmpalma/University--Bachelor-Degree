@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script>
+        function main() {
+            let gc = document
+                .getElementById("acanvas")
+                .getContext("2d");
+            gc.beginPath();
+            gc.moveTo(0, 50);
+            gc.quadraticCurveTo(50, 0, 100, 50);
+            gc.quadraticCurveTo(50, 100, 0, 50);
+            gc.moveTo(25, 40);
+            gc.lineTo(75, 60);
+            gc.lineTo(75, 40);
+            gc.lineTo(25, 60);
+            gc.lineTo(25, 40);
+            gc.closePath();
+            gc.stroke();
+            gc.fillStyle = "crimson";
+            gc.fill("evenodd");
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="acanvas">
+        <script>main();</script>
+    </canvas>
+</body>
+
+</html>

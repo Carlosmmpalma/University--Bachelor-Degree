@@ -1,0 +1,10 @@
+<svg width="640" height="120">
+    <defs>
+        <pattern id="pat1"
+            x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+                <line x1 = "0" y1 = "8" x2 = "0" y2 = "0" stroke = "black"  />
+                <line x1 = "8" y1 = "0" x2 = "0" y2 = "0" stroke = "black" />
+        </pattern>
+    </defs>
+    <rect rx="4" x="0" y="0" width="640" height="120" fill="url(#pat1)" />
+</svg>

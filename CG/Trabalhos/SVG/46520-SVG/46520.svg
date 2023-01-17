@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+<svg width="700" height="500">
+    <!--Fundo apócaliptico-->
+       <defs>
+        <linearGradient id="grad1">
+            <stop
+                offset="0"
+                stop-color="rgba(5,104,99,0.5)" />
+            <stop
+                offset="1"
+                stop-color="#644629" />
+        </linearGradient>
+    </defs>
+    <polygon points="0,0 700,0 700,500 0,500" style="fill:url(#grad1);stroke-width:0;stroke:none" fill-opacity="1"/>
+    <polygon points="0,350 700,350"style="fill:white; stroke-width: 7; stroke:white" />
+    <!--SOL-->
+    <circle cx="100" cy="100" r="40" fill="orange" troke="none" stroke-width="" ></circle> 
+    <!--Prédio-->
+    <polygon points = "568, 347 568 250" style="fill:white; stroke-width: 10; stroke:white"/>
+    <polygon points = "626, 347 626 250" style="fill:white; stroke-width: 10; stroke:white"/>
+    <polygon points = "631, 250 563 250" style="fill:white; stroke-width: 10; stroke:white"/>
+    <rect x="500" y="20" width="196.5" height="325" stroke="darkgrey" fill="#a33b3b" stroke-width="5"/>
+    <rect x="568" y="250" width="67" height="90" stroke="#421111" fill="darkgrey" stroke-width="5"/>
+    <rect x="528" y="60" width="50" height="50" stroke="#421111" fill="darkorange" stroke-width="5"/>
+    <rect x="618" y="60" width="50" height="50" stroke="#421111" fill="darkorange" stroke-width="5"/>
+    <rect x="528" y="140" width="50" height="50" stroke="#421111" fill="darkorange" stroke-width="5"/>
+    <rect x="618" y="140" width="50" height="50" stroke="#421111" fill="darkorange" stroke-width="5"/>
+    <!--Árvores-->
+    <rect x="290" y="280" width="10" height="64" stroke="#5C4033" fill="#5C4033" stroke-width="5"/>
+    <rect x="364" y="280" width="10" height="64" stroke="#5C4033" fill="#5C4033" stroke-width="5"/>
+    <rect x="440" y="280" width="10" height="64" stroke="#5C4033" fill="#5C4033" stroke-width="5"/>
+    <circle cx="295" cy="280" r="30" fill="green" stroke="none" stroke-width="" ></circle> 
+    <circle cx="369" cy="280" r="30" fill="green" stroke="none" stroke-width="" ></circle>
+    <circle cx="445" cy="280" r="30" fill="green" stroke="none" stroke-width="" ></circle> 
+    <!--Zombie--> 
+    <g transform="translate(0 0)">
+     <polygon points = "369,193 469,193 469,201, 369,208" style="fill:#7dac10; stroke-width: 3; stroke:black"/>    
+     <polygon points = "369,180 469,180 469,191 369,198" style="fill:#7dac10; stroke-width: 3; stroke:black"/>  
+     <polygon points = "339,345 369,200 379,200 349,345" style="fill:#7dac10; stroke-width: 3; stroke:black"/>
+     <polygon points = "399,345 369,200 359,200 389,345" style="fill:#7dac10; stroke-width: 3; stroke:black"/>
+     <ellipse cx="369" cy="210" rx="40" ry="65" style="fill:#7dac10; stroke-width: 4; stroke:black"/>  
+     <polygon points = "369,100 439,60 400,30" style="fill:#7dac10; stroke-width: 3; stroke:black"/>
+     <polygon points = "369,100 299,60 338,30" style="fill:#7dac10; stroke-width: 3; stroke:black"/>
+     <circle cx="369" cy="100" r="50" fill="#7dac10" stroke="black" stroke-width="3" ></circle>
+     <circle cx="350" cy="85" r="15" fill="black" stroke="none" stroke-width="" ></circle>
+     <circle cx="350" cy="85" r="10" fill="red" stroke="none" stroke-width="" ></circle>
+     <circle cx="388" cy="85" r="15" fill="black" stroke="none" stroke-width="" ></circle>
+     <circle cx="388" cy="85" r="10" fill="red" stroke="none" stroke-width="" ></circle>
+     <ellipse cx="369" cy="125" rx="20" ry="10" style="fill:black; stroke-width: 4; stroke:white"/>
+     <ellipse cx="369" cy="125" rx="10" ry="20" style="fill:black; stroke-width: 4; stroke:white"/>
+     <ellipse cx="369" cy="125" rx="10" ry="1" style="fill:black; stroke-width: 4; stroke:white"/>  
+     <animateTransform attributeName="transform"
+            attributeType="x"
+            type="translate"
+            from="-600 0 "
+             to="80 0 "
+            dur="4s"
+            repeatCount="indefinite"/>    
+    </g> 
+    <!--Gato Zombie-->
+    <g transform="translate(0 0)">   
+     <rect x="190" y="304" width="7" height="40" stroke="black" fill="lightgrey" stroke-width="2"/>
+     <rect x="195" y="304" width="7" height="40" stroke="black" fill="lightgrey" stroke-width="2"/>
+     <rect x="155" y="304" width="7" height="40" stroke="black" fill="lightgrey" stroke-width="2"/>
+     <rect x="160" y="304" width="7" height="40" stroke="black" fill="lightgrey" stroke-width="2"/>
+     <ellipse cx="175" cy="295" rx="35" ry="22" style="fill:lightgrey; stroke-width: 3; stroke:black"/>  
+     <polygon points = "200,270 215,230 215,270" style="fill:lightgrey; stroke-width: 3; stroke:black"/> 
+     <polygon points = "200,270 185,230 185,270" style="fill:lightgrey; stroke-width: 3; stroke:black"/>    
+     <circle cx="200" cy="270" r="20" fill="lightgrey" stroke="black" stroke-width="3" ></circle>
+     <circle cx="192" cy="265" r="5" fill="red" stroke="black" stroke-width="4" ></circle>
+     <circle cx="208" cy="265" r="5" fill="red" stroke="black" stroke-width="4" ></circle>
+     <polygon points = "198,277 200,272 202,277 " style="fill:lightgrey; stroke-width: 3; stroke:black"/> 
+     <path d="M 188 282 Q 195,282 200,277" stroke="black" fill="transparent"/>  
+     <path d="M 212 282 Q 205,282 200,277" stroke="black" fill="transparent"/>
+     <animateTransform attributeName="transform"
+            attributeType="x"
+            type="translate"
+            from="-200 0 "
+             to="300 0 "
+            dur="4s"
+            repeatCount="indefinite"/>    
+    </g>  
+     
+</svg>
+</body>
+</html>

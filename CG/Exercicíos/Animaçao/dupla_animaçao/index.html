@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animação Dupla SVG+X3D</title>
+    <meta charset="utf-8" />
+    <script src="lib/x3dom/x3dom.js"></script>
+    <link rel='stylesheet' type='text/css' href='lib/x3dom/x3dom.css' />
+    <script src="duplanim.js">
+    </script>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div    id="svg-container"
+                style="flex:auto;background-color: azure;">
+            <svg  width="256px" height="256px">
+                <g transform="translate(64, 64)">
+                    <g id="svg-object-angle">
+                        <rect   id="svg-object"
+                                width="128"
+                                height="128"
+                                style="fill:cornflowerblue"></rect>
+                    </g>
+                </g>
+            </svg>
+        </div>        
+        <div    id="x3d-container"
+                style="flex:auto; background-color: beige;">  
+            <x3d width="256px" height="256px">
+                <scene>
+                    <inline url="referencial.x3d">
+                    </inline>
+                    <transform id="x3d-object">
+                        <shape>
+                            <appearance>
+                                <twosidedmaterial diffuseColor="crimson"></twosidedmaterial>
+                            </appearance>
+                            <box size="0.75 0.75 0.75"></box>
+                        </shape>
+                    </transform>
+                </scene>
+            </x3d>
+        </div>      
+        <div    id="terminal" 
+                style="font-family: monospace; background-color: bisque; text-align: center; width: 256px"></div>
+    </div>
+    <script>main();</script>
+</body>
+</html>
+
