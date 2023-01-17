@@ -1,0 +1,1 @@
+CREATE TABLE student(id INT);

@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "/home/carlos/Desktop/Universidade/SO/Trabalho",
+      "environment": [],
+      "program": "/home/carlos/Desktop/Universidade/SO/Trabalho/Project1",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+lui t0, 0x00107f
+addi t0, t0, 0xff

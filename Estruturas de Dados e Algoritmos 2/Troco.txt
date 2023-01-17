@@ -1,0 +1,35 @@
+//Soluçao lenta
+
+m(q)={0 se q=0,
+
+      1+min(m(1-ti)) se q>0}
+
+//Exemplo
+int[Q+1] quantia;
+	se Ti[]={1,3,4}
+quantia[0]=0;
+quantia[1] entao 1-1=0 logo 1+quantia[0];
+quantia[2] entao 2-1=1 logo 1+quantia[1];
+quantia[3] entao 3-1=2 logo 1+quantia[2]
+	    entao 3-3=0 logo 1+quantia[0];
+quantia[4] entao 4-1=3 logo 1+quantia[3]
+	   entao 4-3=1 logo 1+quantia[1]
+	   entao 4-4=0 logo 1+quantia[0];
+	   
+//Programa
+int[n_moedas] T;
+int[Q+1] quantia;
+quantia[0]=0;
+int minim=max int;
+
+for(int i=1;i<q;i++){
+	for(j=0;j<n_moedas;i++){
+		if(T[j]<=q){
+			minim=min(minim,1+[quantia[i]-T[j]);
+			m[q]=minim;
+			}
+	}
+}
+	
+		
+	

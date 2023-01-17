@@ -1,0 +1,1 @@
+word.equals(stop)==false && word.equals(STOP)==false

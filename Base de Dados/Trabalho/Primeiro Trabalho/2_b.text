@@ -1,0 +1,11 @@
+	CREATE TABLE membro(
+			Nome VARCHAR(50),
+			Email VARCHAR(50) PRIMARY KEY,
+			Ano DATE
+	);
+
+	CREATE TABLE gostaDe(
+			Nome VARCHAR(50),
+			Country VARCHAR(1000) 
+	);
+

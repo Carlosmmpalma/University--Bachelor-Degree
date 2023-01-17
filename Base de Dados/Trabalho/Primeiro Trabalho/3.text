@@ -1,0 +1,51 @@
+//A
+SELECT Name
+FROM country,isMember 
+WHERE country.Code =isMember.Country AND Organization='EU';
+
+//B
+SELECT Name
+FROM isMember, encompasses
+WHERE isMember.Country=encompasses.Country AND Organization!='EU';
+
+//C
+SELECT GDP
+FROM isMember,economy
+WHERE isMember.Country=economy.Country AND Organization!='EU';
+
+//D
+SELECT Name,min(GDP)
+FROM economy, country,isMember
+WHERE economy.Country=isMember.Country AND economy.Country=country.Code AND Organization='EU';
+
+//E
+SELECT Organization, count(Country)
+FROM isMember;
+
+//F
+SELECT Country,count(Organization)
+FROM isMember;
+
+//G
+SELECT Name,max(Organization)
+FROM country,isMember;
+where isMember.Country=country.Code;
+
+//H
+SELECT Organization,min(country)
+FROM isMember;
+
+//I 
+SELECT Name,max(GDP)
+FROM economy,country
+WHERE economy.Country=country.Code;
+
+//J
+SELECT Organization,Name
+FROM country,isMember
+WHERE country.Name='Marrocos' AND country.Code=isMember.Country;
+
+//k
+SELECT Organization
+FROM isMember
+WHERE Organization='Benelux';

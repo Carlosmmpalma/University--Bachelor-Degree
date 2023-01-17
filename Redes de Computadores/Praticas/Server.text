@@ -1,0 +1,12 @@
+Servidor:
+-1 cliente de cada vez(sequencial)
+ou
+-vários clientes ao mesmo tempo(paralelo)
+->Fork()
+->(P)threads 
+->Select(MAXFD+1,SET_READ,NULL,NULL,TIMEOUT->PODE SER TMB NULL)
+
+->FD_ZERO(CONJ.SOCKETS) INICIALIZA O CONJUNTO DE SOCKETS A 0
+->FD_SET(FILE_DESCRIPTOR,CONJUNTO)
+->FD_CLR(FILE_DESCRIPTOR,CONJUNTO)
+->FD_ISSET(FILE_DESCRIPTOR,CONJUNTO)
