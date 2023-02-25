@@ -1,0 +1,7 @@
+classes/MetodosImp.class
+PostgresConnector/TesteAcessoBD.class
+classes/Cliente_geral.class
+classes/Metodos.class
+classes/Cliente_gestao.class
+classes/PostgresConnector.class
+classes/Server.class

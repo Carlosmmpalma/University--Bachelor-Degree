@@ -1,0 +1,20 @@
+CREATE TABLE anuncios (
+    aid serial PRIMARY KEY,
+    estado varchar(10) NOT NULL,
+    tipo varchar(10) NOT NULL,
+    tipologia varchar(10) NOT NULL,
+    genero varchar(15) NOT NULL,
+    descricao varchar(500),
+    preco varchar(100),
+    anunciante varchar(10) NOT NULL,
+    contacto varchar(50),
+    localizacao varchar(50),
+    data varchar(50) NOT NULL
+);
+
+CREATE TABLE mensagens(
+    aid integer,
+    remetente varchar(20),
+    mensagem varchar(500),
+    FOREIGN KEY (aid) REFERENCES anuncios(aid)
+);

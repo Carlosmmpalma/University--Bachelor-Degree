@@ -1,0 +1,536 @@
+    /*CABEÇALHO*/
+    
+    #cab {
+        text-align: center;
+        font-family: Stencil Std, fantasy;
+    }
+    
+    #cab h1 {
+        font-size: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #9e1c33;
+    }
+    
+    #cab h2 {
+        font-size: 25px;
+        margin-top: 0px;
+        color: darkgrey;
+        margin-bottom: 5px;
+    }
+    
+    #cab h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin: 0px;
+    }
+    /*BARRA DE NAVEGAÇÃO VISITANTE*/
+    
+    #barra_home {
+        background-color: white;
+        overflow: hidden;
+        width: 100%;
+        height: 60px;
+    }
+    
+    #barra_home ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 22em;
+        margin-top: 10px;
+    }
+    
+    #barra_home ul li {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        float: left;
+    }
+    
+    #barra_home ul li a {
+        display: block;
+        padding: 0.6em;
+        border: 2px solid #9e1c33;
+        border-radius: 1em;
+        margin: 0.1em;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+    }
+    
+    #barra_home a:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+    #barra_home a:link {
+        color: darkgrey;
+    }
+    
+    #barra_home a:active {
+        color: black;
+        border-color: white;
+    }
+    /*BARRA DE NAVEGAÇÃO UTILIZADOR*/
+    
+    #barra_admin {
+        background-color: white;
+        overflow: hidden;
+        width: 100%;
+        height: 60px;
+    }
+    
+    #barra_admin ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 40em;
+        margin-top: 10px;
+    }
+    
+    #barra_admin ul li {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        float: left;
+    }
+    
+    #barra_admin ul li a {
+        display: block;
+        padding: 0.6em;
+        border: 2px solid #9e1c33;
+        border-radius: 1em;
+        margin: 0.1em;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+    }
+    
+    #barra_admin a:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+    #barra_admin a:link {
+        color: darkgrey;
+    }
+    
+    #barra_admin a:active {
+        color: black;
+        border-color: white;
+    }
+    /*BOTTOM*/
+    
+    #bottom {
+        background-color: #9e1c33;
+        font-family: 'Courier New', Courier, monospace;
+        color: whitesmoke;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    
+    #bottom p {
+        padding-left: 10px;
+    }
+    
+    div.footer {
+        width: 550px;
+        display: inline-block;
+        text-align: center;
+        padding-left: 50px;
+    }
+    
+    .footer img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    #cont img {
+        height: 50px;
+        width: 50px;
+        padding-left: 10px;
+    }
+    
+    #pat img {
+        height: 150px;
+        width: 150px;
+        padding-bottom: 5px;
+    }
+    
+    #cred {
+        position: relative;
+        bottom: 100px;
+    }
+    /*FOOTER N SOBREPOR CONTEUDO */
+    
+    body {
+        font-family: Optima, sans-serif;
+        min-height: 400px;
+        margin-bottom: 300px;
+        padding-bottom: 300px;
+        clear: both;
+    }
+    
+    @media (max-width: 1024px) {
+        body {
+            font-family: Optima, sans-serif;
+            margin-bottom: 700px;
+        }
+    }
+    /*Forms*/
+    
+    form fieldset {
+        border: #9e1c33;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    
+    #login-box {
+        border: #9e1c33;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    
+    #regist {
+        border: #9e1c33;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    
+    #butoes {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    form legend {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    #filtro_anuncios {
+        align-content: left;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #9e1c33;
+    }
+    
+    #filtro_anuncios h3 {
+        text-align: left;
+    }
+    /*Listagem de anuncios*/
+    
+    #anuncios h2 {
+        color: black;
+    }
+    
+    #anuncios h3 {
+        color: darkgrey;
+    }
+    
+    h2,
+    h3 {
+        text-align: center;
+    }
+    
+    .aid:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+    .aid:link {
+        color: darkgrey;
+    }
+    
+    .aid:active {
+        color: black;
+        border-color: white;
+    }
+    
+    .aid1:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+    .aid1:link {
+        color: darkgrey;
+    }
+    
+    .aid1:active {
+        color: black;
+        border-color: white;
+    }
+    
+    .aid2:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+    .aid2:link {
+        color: darkgrey;
+    }
+    
+    .aid2:active {
+        color: black;
+        border-color: white;
+    }
+    
+    #anuncios div {
+        display: inline-block;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-style: dashed;
+        border-radius: 15px;
+        background-color: #9e1c34;
+        color: white;
+        width: 17%;
+    }
+    
+    #anuncios {
+        text-align: center;
+    }
+    
+    #anun_inativos div {
+        display: inline-block;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-style: dashed;
+        border-radius: 15px;
+        background-color: #9e1c34;
+        color: white;
+        width: 17%;
+    }
+    
+    #anun_inativos {
+        text-align: center;
+    }
+    
+    #anun_ativos div {
+        display: inline-block;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-style: dashed;
+        border-radius: 15px;
+        background-color: #9e1c34;
+        color: white;
+        width: 17%;
+    }
+    
+    #anun_ativos {
+        text-align: center;
+    }
+    
+    #anuncio {
+        border-color: #9e1c33;
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #9e1c34;
+        color: white;
+    }
+    
+    #anuncio1 {
+        border-color: #9e1c33;
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #9e1c34;
+        color: white;
+    }
+    
+    #anuncio2 {
+        border-color: #9e1c33;
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #9e1c34;
+        color: white;
+    }
+    
+    #form_msg {
+        border-color: #9e1c33;
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #9e1c34;
+        color: white;
+    }
+    
+    #butoes1 {
+        text-align: center;
+    }
+    
+    #butoes2 {
+        text-align: center;
+    }
+    
+    .error {
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #a94442;
+        background-color: #f2dede;
+        border-color: #ebccd1;
+    }
+    
+    .msg {
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #31708f;
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+    }
+    
+    .success {
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #31708f;
+        background-color: lightgreen;
+        border-color: #bce8f1;
+    }
+    
+    #but {
+        border-radius: 5px;
+        border-style: dashed;
+        color: whitesmoke;
+        background-color: #a94442
+    }
+    /*ANUNCIOS HOMEPAGE*/
+    
+    #anun_oferta,
+    #anun_procura {
+        border-color: #9e1c33;
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+    
+    #anun_oferta h2,
+    #anun_procura h2 {
+        color: darkgrey;
+    }
+    
+    #anun_oferta div,
+    #anun_procura div {
+        display: inline-block;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-style: dashed;
+        border-radius: 15px;
+        background-color: #9e1c34;
+        color: white;
+        width: 15%;
+    }
+    
+    .anun_destaque2 {
+        border-color: #9e1c33;
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #9e1c34;
+        color: white;
+    }
+    /*MENSAGENS*/
+    
+    #mensagens2 div {
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-style: dashed;
+        border-radius: 15px;
+        background-color: #9e1c34;
+        color: white;
+        margin-bottom: 25px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #div_msg {
+        border-color: #9e1c33;
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #9e1c34;
+        color: white;
+    }
+    
+    #mensagens2 p {
+        text-align: center;
+        border-color: #9e1c34;
+        background-color: #9e1c34;
+        border-style: solid;
+        border-radius: 5px;
+        color: white;
+    }
+    /*Pagamentos*/
+    
+    #pagamento {
+        border-radius: 10px;
+        border-style: solid;
+        border-color: lightblue;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
+        color: darkblue;
+    }

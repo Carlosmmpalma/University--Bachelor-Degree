@@ -1,0 +1,139 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <style>
+        @font-face {
+            font-family: 'Marko One';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/markoone/v22/9Btq3DFG0cnVM5lw1haqLZ8e.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        
+        div {
+            font-family: Verdana, sans-serif;
+        }
+        
+        h1 {
+            font-family: Marko One;
+            font-size: 1.5em;
+            text-shadow: .1em .1em .2em lightslategray;
+        }
+        
+        h2 {
+            font-size: inherit;
+            text-transform: uppercase;
+        }
+        
+        #body {
+            font-size: 100%;
+            line-height: 1.4em;
+        }
+        
+        p,
+        dl {
+            font-size: 0.875;
+        }
+        
+        dt {
+            font-weight: bold;
+        }
+        
+        strong {
+            font-style: italic;
+        }
+        
+        dt strong {
+            color: maroon;
+        }
+        
+        #info {
+            color: teal;
+        }
+        
+        #info p {
+            font-style: italic;
+            color: grey;
+        }
+        
+        .price {
+            font-family: Georgia, serif;
+            font-style: italic;
+            color: grey;
+        }
+        
+        .label {
+            font-weight: bold;
+            font-style: normal;
+            font-variant: small-caps;
+        }
+        
+        .warning {
+            font-size: x-small;
+            color: red;
+        }
+        
+        h1,
+        h2,
+        #info {
+            text-align: center;
+        }
+        
+        h2+p {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Black Goose Bistro Summer Menu</title>
+
+</head>
+
+<body id="body">
+
+    <div id="info">
+        <h1>Black Goose Bistro &bull; Summer Menu</h1>
+
+        <p>Baker's Corner, Seekonk, Massachusetts<br>
+            <span class="label">Hours: Monday through Thursday:</span> 11 to 9, <span class="label">Friday and Saturday;</span> 11 to midnight</p>
+    </div>
+
+    <div id="appetizers">
+        <h2>Appetizers</h2>
+        <p>This season, we explore the spicy flavors of the southwest in our appetizer collection.</p>
+
+        <dl>
+            <dt>Black bean purses</dt>
+            <dd>Spicy black bean and a blend of mexican cheeses wrapped in sheets of phyllo and baked until golden. <span class="price">$3.95</span></dd>
+
+            <dt class="newitem">Southwestern napoleons with lump crab &mdash; <strong>new item!</strong></dt>
+            <dd>Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. <span class="price">$7.95</span></dd>
+        </dl>
+    </div>
+
+    <div id="entrees">
+
+        <h2>Main courses</h2>
+        <p>Big, bold flavors are the name of the game this summer. Allow us to assist you with finding the perfect wine.</p>
+
+
+        <dl>
+
+            <dt class="newitem">Jerk rotisserie chicken with fried plantains &mdash; <strong>new item!</strong></dt>
+            <dd>Tender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sauce and served with fried plantains and fresh mango. <strong>Very spicy.</strong> <span class="price">$12.95</span></dd>
+
+            <dt>Shrimp sate kebabs with peanut sauce</dt>
+            <dd>Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served with spicy peanut sauce and jasmine rice. <span class="price">$12.95</span></dd>
+
+            <dt>Grilled skirt steak with mushroom fricasee</dt>
+            <dd>Flavorful skirt steak marinated in asian flavors grilled as you like it<sup>*</sup>. Served over a blend of sauteed wild mushrooms with a side of blue cheese mashed potatoes. <span class="price">$16.95</span></dd>
+        </dl>
+
+    </div>
+
+    <p class="warning"><sup>*</sup> We are required to warn you that undercooked food is a health risk.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+sd/clientes/Cliente_geral.class
+sd/rest/AnuncioResource.class
+sd/rest/DbOperations.class
+sd/rest/Anuncio.class
+sd/rest/MainAppServer.class
+sd/clientes/Cliente_gestao.class
+sd/rest/PostgresConnector.class
+sd/rest/Mensagem.class

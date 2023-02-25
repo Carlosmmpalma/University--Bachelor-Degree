@@ -1,0 +1,2 @@
+1)Explique como o MIddlewave simplifica  atarefa de desenvolvimento de aplicações distribuidas
+-O middleware na prespetiva de Sistemas distribuidos trata-se de uma camada que realiza a ligação entre aplicações e o Sistema operativo conectando os diversos computadores de um sistema distribuido, como tal anivel do desenvolvimento de aplicações é muito importante pois o programador apenas necessita de conhecer uma interface,neste caso a de middleware.

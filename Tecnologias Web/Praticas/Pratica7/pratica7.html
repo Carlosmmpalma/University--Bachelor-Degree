@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var friends = ["Carlos", "João", "André", "Mário"];
+        alert(friends[2]);
+
+        var name = "Carlos";
+        if (name.length > 4) {
+            alert("comprimento superior a 4");
+        } else {
+            alert("comprimento não superior a 4");
+        }
+
+        var c = 0;
+        for (var i = 0; i < friends.length; i++) {
+            if (friends[i] === name) c = 1;
+        }
+
+        if (c === 1) {
+            alert("Há um amigo com o mesmo nome!");
+        } else {
+            alert("Nenhum homónimo");
+        }
+
+        var myVariable = window.prompt();
+        parseInt(myVariable);
+
+        if (myVariable > 5) {
+            alert("upper " + typeof(myVariable));
+        } else {
+            alert("lower " + typeof(myVariable));
+        }
+    </script>
+</body>
+
+</html>

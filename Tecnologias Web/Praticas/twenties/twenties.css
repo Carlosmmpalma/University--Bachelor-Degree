@@ -1,0 +1,29 @@
+#h1 {
+    color: red;
+    border-bottom: 1px, red;
+    border-bottom-style: solid;
+}
+
+#h2 {
+    color: grey;
+    margin-left: 100px;
+}
+
+p {
+    font-size: small;
+    font-family: "sans-serif";
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+img {
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+p em {
+    color: blue;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contest Entry Form</title>
+    <style type="text/css">
+        ol,
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+
+    <p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one of ten lucky winners.</p>
+
+
+
+    <form action="http://localhost:8080" method="POST">
+        <fieldset>
+            <legend>Contest Entry Information:</legend>
+            <ul>
+                <li>Name:<input type="text" id="name" name="name"></li>
+                <li>Email Address:<input type="email" id="email" name="email"></li>
+                <li>State:<select name="state" id="state">
+            <option>Beja</option>
+            <option>Évora</option>
+            <option>Faro</option>
+            <option>Setubal</option>
+            <option>Portalegre</option>
+            <option>Lisboa</option>
+        </select></li>
+                <li>Data_nascimento: </li><input type="date" name="birthday" value="2017-01-14"></li>
+                <li>My shoes are SO old…</br><input type="textarea" name="shoes_old" rows="4" cols="60"></li>
+        </fieldset>
+        </ul>
+
+        <h2>Design your custom Forcefields:</h2>
+
+        <fieldset>
+            <legend>Custom shoe design:</legend>
+
+            <p>Color <em>(choose one)</em>:<input type="color" name="color"></p>
+            <ul>
+                <!--<li><input type="radio" name="color" value="RED" checked>RED</li>
+            <li><input type="radio" name="color" value="BLUE" checked>BLUE</li>
+            <li><input type="radio" name="color" value="BLACK" checked>BLACK</li>
+            <li><input type="radio" name="color" value="SILVER" checked>SILVER</li>-->
+            </ul>
+
+            <p>Features <em>(Choose as many as you want)</em></p>
+            <ul>
+                <li><input type="checkbox" name="features" value="Sparkley">Sparkley laces</li>
+                <li><input type="checkbox" name="features" value="Metallic">Metallic logo</li>
+                <li><input type="checkbox" name="features" value="Light">Light-up heels</li>
+                <li><input type="checkbox" name="features" value="Mp3">MP3-enabled</li>
+            </ul>
+
+            <p>Size</p>
+            <p>Sizes reflect standard men's sizes:<select name="size">
+            <option>38</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+        </select></p>
+        </fieldset>
+        </br>
+        </br>
+
+        <li>Send photo:
+            <input type="file" id="myFile" name="filename">
+        </li>
+        </br>
+        </br>
+
+        <input type="reset" value="RESET">
+        <input type="submit" value="SUBMIT">
+    </form>
+
+</body>
+
+</html>

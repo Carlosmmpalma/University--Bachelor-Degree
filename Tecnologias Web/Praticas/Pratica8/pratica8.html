@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="container">
+        <p>Welcome to the Billion Dollar Web Page!</p>
+        <p id="status"></p>
+        <button onclick="myFunction();">CHECK</button>
+    </div>
+
+    <script>
+        var messages = 0;
+
+        function myFunction() {
+            messages++;
+            document.title = "WebApp (" + messages + " unread messages)";
+            var status = document.getElementById("status");
+            status.innerHTML = "You have " + messages + " unread messages";
+
+            if (messages >= 4) {
+                status.style.color = "red";
+                status.style.fontWeight = "bold";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

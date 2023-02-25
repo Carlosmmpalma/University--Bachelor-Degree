@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Aula</h2>
+    <h3>fonte de dados</h3>
+    <textarea id="src1" rows="10" cols="60">
+{
+   "notas":[
+      {"aluno":"90001",
+       "aval":{
+         "f1":11,
+         "f2":12,
+         "f3":15
+      }},
+      {"aluno":"90002",
+       "aval":{
+         "f1":11,
+         "f2":12,
+         "f3":15
+      }}
+   ]
+
+}
+</textarea>
+    <button onclick="media()">Click me</button>
+
+    <h3>resultado</h3>
+    <p id="target"></p>
+
+    <script>
+        // obter e mostrar conteúdo de src1
+        function texto(event) {
+            obj = document.getElementById("src1").innerHTML;
+            document.getElementById("target").innerHTML = obj;
+        }
+        // mostrar o tipo
+        function tipo(event) {
+            obj = document.getElementById("src1").innerHTML;
+            var tipo = typeof(obj);
+            document.getElementById("target").innerHTML = tipo;
+        }
+        // converter para Object
+        function convert(event) {
+            obj = document.getElementById("src1").innerHTML;
+            obj = JSON.parse(obj);
+            var tipo = typeof(obj);
+            document.getElementById("target").innerHTML = tipo;
+        }
+        // no parágrafo com identificador "target", mostrar a média de cada aluno
+        function media() {
+            var obj = document.getElementById("src1").value;
+            obj = JSON.parse(obj);
+            var media1 = 0;
+
+            for (var i = 0; i < obj.notas.length; i++) {
+                media1 = media;
+                var media = 0;
+                Object.keys(obj.notas[i].aval).forEach(function(key) {
+                    media += obj.notas[i].aval[key];
+                    console.log(obj.notas[i].aval[key]);
+                });
+            }
+            document.getElementById("target").innerHTML = " Media1:" + media / 3;
+            media1 = media1 / 3;
+            document.getElementById("target").append(" Media2:" + media1);
+
+
+        }
+    </script>
+</body>
+
+</html>

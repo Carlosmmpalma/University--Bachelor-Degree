@@ -1,0 +1,6 @@
+e4 f2
+d4 d3
+a5 a2
+Rf3 Rf6
+exd3 exd3
+1-0 1-0
